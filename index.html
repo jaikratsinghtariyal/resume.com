@@ -1,245 +1,232 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV template</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">CURRICULUM VITAE</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUME</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
+      </div>
 
-    <title>Jaikrat Singh Tariyal</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-		h1 {
-            text-align: right;
-        }
-
-         h2, h3 {
-            text-align: left;
-        }
-
-        section {
-            margin-bottom: 30px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        .resume-header {
-            text-align: right;
-            float: right;
-        }
-
-        .profile-photo {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            margin: 20px auto;
-        }
-
-        .badge-container {
-            float: right;
-            margin-right: 20px;
-        }
-
-        .badge {
-            width: 100px;
-            height: 100px;
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <header class="resume-header">
-        <img src="IMG-20230801-WA0003.jpg" alt="Your Photo" class="profile-photo">
-        <h1>Jaikrat Singh Tariyal</h1>
-        <p>jaikrat.singh@gmail.com | +44-7776800903</p>
-        <p><a href="https://www.linkedin.com/in/jaikrattariyal/">https://www.linkedin.com/in/jaikrattariyal/</a></p>
-        <p><a href="https://www.credly.com/users/jaikrat-tariyal.2225a64d">https://www.credly.com/users/jaikrat-tariyal.2225a64d</a></p>
-        
-        <div class="badge-container">
-                <img src="index.fld/image001.png" alt="Badge 1" width="80" height="80">
-                <img src="index.fld/image002.png" alt="Badge 2" width="80" height="80">
-                <img src="index.fld/image003.png" alt="Badge 3" width="80" height="80">
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="avatar.png" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#facebook" target="_blank">
+              <i data-feather="facebook"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#instagram" target="_blank">
+             <i data-feather="instagram"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#twitter" target="_blank">
+             <i data-feather="twitter"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#linkedin" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
         </div>
-    </header>
-
-    <section class="resume-section">
-        <h2>Experience Summary</h2>
-        <div class="resume-content">
-             <ul>
-                <li>
-              Around 16 years of experience in Software Development, Design, and DevOps experience with proficiency in multiple programming Frameworks,  MicroServices, Distributed Application Architectures, Agile Methodologies, Version Control Systems, Cloud Platforms, Continuous Integration/Continuous Deployment (CI/CD) pipelines, and strong problem-solving skills.</li>
-                <li>Currently associated with Wipro as Solution Architect since 2019,</li>
-                <li>Proven track record of successfully architecting and implementing scalable, secure, and high-performance software systems for banking applications</li>
-                <li>Knowledge of banking regulations, compliance, and security standards e.g. PCI</li>
-                <li>Strong understanding of banking processes, workflows, and business requirements</li>
-                <li>Proficient in Java, Spring Framework, Solution and API Designing, CI/CD, and other DevOps techs</li>
-                <li>Excellent problem-solving, analytical, and communication skills, with a demonstrated ability to collaborate effectively with cross-functional teams and stakeholders</li>
-                <li>Experience in working in fast fast-paced dynamic work environment</li>
-                <li>Extensively engaged in Change The Bank initiatives within various organizations</li>
-                <li>SME of API Architect activities in Unsecured Lending Value Stream with the current client.</li>
-              </ul> 
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a href="./resume.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+          </a>
         </div>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">CURRICULUM VITAE</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <p style="font-style: italic; font-size:x-large;">"The mind is the limit. When you face your struggles, you overcome them."</p>
+            <h1>John Doe (35)</h2>
+            <h2>Community manager</h3>
+            <p></p>
+          </div>
+
+          <!--ABOUT SECTION-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
+            <p class="w3-margin-top-2"> 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Nam porttitor sollicitudin efficitur. 
+               Integer posuere odio vel ullamcorper euismod. 
+               Aliquam sit amet nulla tortor. 
+               Integer vehicula nunc et condimentum feugiat. 
+               Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+            </p>
+            <p class=""> 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Nam porttitor sollicitudin efficitur. 
+               Integer posuere odio vel ullamcorper euismod. 
+               Aliquam sit amet nulla tortor. 
+               Integer vehicula nunc et condimentum feugiat. 
+               Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+            </p>
+            <p class=""> 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Nam porttitor sollicitudin efficitur. 
+               Integer posuere odio vel ullamcorper euismod. 
+               Aliquam sit amet nulla tortor. 
+               Integer vehicula nunc et condimentum feugiat. 
+               Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+            </p>
+          </div>
+
+          <!--RESUME-->
+          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+              <!--EMPLOYMENT HISTORY SECTION-->
+              <h3 class="w3-border-amber">MY EMPLOYMENT HISTORY</h3>
+              <div class="">
+                <h4>Community Manager at the Company-X</h4>
+                <p>September 2020 - Present</p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Ensured that published content meets brand guidelines and overall communication styles</li>
+                  <li>Built relations with the online community</li>
+                  <li>Implemented social media strategies to increase engagement and followers</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Social Community Manager at the Company-Y</h4>
+                <p>January 2017 - June 2020 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Ensured that audience growth rate is in increase through social networs</li>
+                  <li>Managed social media campaigns for various social media platforms to align with marketing strategies</li>
+                  <li>Monitored and provided feedback on engagement/conversation via social media channels to leadership</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Social Community Manager at the Company-Z</h4>
+                <p>January 2014 - April 2016 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Organized and managed community events to boost brand awareness</li>
+                  <li>Monitored, tracked and reported on feedback and online reviews</li>
+                  <li>Provided engaging text, image and video content for all social media and professional accounts</li>
+                </ul>
+              </div>
+            </div>
+
+            <!---EDUCATION SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY EDUCATION</h3>
+                <h4>College diploma, College of management, Houston</h4>
+                <p>October 2008 - July 2013 </p>
+                <h4>Highschool diploma, XYZ Highschool, Houston</h4>
+                <p>October 2004 - July 2008 </p>
+            </div>
+
+            <!--SKILLS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY SKILLS</h3>
+              <!--SOFT SKILLS-->
+              <h4>Soft skills</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>I have excelent communication skill and confidence in front of an audience</li>
+                <li>I have a talent for investigating and researching different processes to offer different improvements and solution for the benefit of the organization </li>
+                <li>Provided engaging text, image and video content for all social media and professional accounts</li>
+              </ul>
+              <!--TECHNICAL SKILLS-->
+              <h4>Technical skills</h4>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>I have a great experience with MS Office tools</li>
+                  <li>I am proficient in technical writing</li>
+                  <li>Provided engaging text, image and video content for all social media and professional accounts</li>
+                </ul>
+            </div>
+
+            <!--INTERESTS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY HOBBIES AND INTERESTS</h3>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>I love mountain hiking and cycling in my free time</li>
+                  <li>I like to play board games with other people</li>
+                </ul>
+            </div>
+
+            <!--REFERENCE SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY REFERENCES</h3>
+              <h4>Jane Doe, CEO at Company-Z</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+0123456789</li>
+                <li>janedoe@companyz.com</li>
+              </ul>
+              <h4>Margaret Johnson, Manager at Company-Y</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+9876543210</li>
+                <li>mjohnson@companyy.com</li>
+              </ul>
+            </div>            
+          </div>
+
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Name: John Doe</p>
+              <p>Adress: Street name 99, 77001 Houston, Texas</p>
+              <p>Phone number: +0123456789</p>
+              <p>E-mail: johndoe@email.com</p>
+            </div>
+          </div>
+
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2021 - John Doe</p>
+           <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
+          <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> 
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
     </section>
-
-    <section class="resume-section">
-        <h2>Professional Achievements</h2>
-        <ul>
-	    <li>Contributed to the Solution Design of HSBC’s Buy Now, Pay Later <a href=“https://www.hsbc.co.uk/financial-fitness/managing-debt/buy-now-pay-later-what-you-need-to-know/”> (BNPL)</a> product for new customers.</li>
-	    <li>Contributed to the design of Microservice Solutions to streamline the <a href="https://bank.marksandspencer.com/credit-card/?cid=HBEU:ma:P0:CC:NA:1804:074:Brand">M&S Cards</a> onboarding process for new customers.</li>
-            <li>Implemented an Online <a href="https://www.hsbc.co.in/ways-to-bank/payments/">Bill Payment System</a> in HSBC India, enabling HSBC customers to make real-time online bill payments using their Net Banking facility.</li>
-            <li>Integrated one of the <a href="https://www.hsbc.co.in/ways-to-bank/online-banking/payment-gateway/">Payment Gateway</a> with HSBC India, enabling customers to use their account for online features like Shopping, Ticket Booking etc.</li>
-            <li>UPI Integration with <a href="https://www.hsbc.co.in/ways-to-bank/mobile-banking/simply-pay/">HSBC India Mobile App</a> enabling customer to instant payment using their mobile</li>
-        </ul>
-    </section>
-    <section class="resume-section">
-        <h2>Awards</h2>
-        <ul>
-            <li><b> Extra Mile Award, Wipro(2024)</b>: To recognize the significant impact on business objectives in a collective recognition forum.</li>
-            <li><b>BU Level Award, Wipro(2020) </b>: Business Value Creator, Awarded to an individual or team for the business value creator to Wipro and the end customer.</li>
-            <li><b>Surpass Award (Nomination), Synechron(2015)</b>: This award is given to an employee for his/her consistent performance during a   specific quarter. Significant overall contribution to the project and being a critical factor that has helped to improve employee performance within the team. Demonstration of excellence and quality in work.</li>
-            <li><b>Spot Award, Synechron(2014)</b>: Reward given to an employee at the spur of the moment for his/her exceptional contribution beyond their primary tasks and responsibilities.</li>
-            <li><b>On the Spot Award, HSBC(2010)</b>: The award is given within a team on a quarterly basis for extraordinary work done by a member of a team by putting in some additional effort.</li>
-            <li><b>Recognition of Individual’s Superior Efforts (RISE) Award, HSBC(2009)</b>: Award given for those who display commitment/additional effort/stretch in completing an assignment or series of assignments in a quarter (completing milestone for a long-term assignment).</li>
-        </ul>
-    </section>
-
-    <section class="resume-section">
-        <h2>Certification</h2>
-        <ul>
-            <li>AWS Solution Architect (Associate) - 2021</li>
-            <li>MongoDB Certified Associate Developer - 2023</li>
-            <li>GITHUB Foundation - 2024</li>
-        </ul>
-    </section>
-
-    <section class="resume-section">
-        <h2>Skills Set</h2>
-        <div class="resume-content">
-            <h3>Technical</h3>
-            <ul>
-                <li><b>Skills</b>: Programming(Java), Unit Testing and Debugging, MicroServices Designing and Development, UML, Modelling,  Problem Solving and Decision Making, API Migration</li>
-                <li><b>Frameworks</b>: AXON(CQRS), Spring, SpringBoot, JSF, JQuery, JUNIT,  WireMock, RAML(0.8, 1.0), Swagger 2.0,3.0 (OAS),  MongoDB, KONG, DOCKER, Kubernetes, Cloud Technologies(AWS, GCP), Containerization Virtualization, SOAP and REST, DDD, TDD, Event-Driven, Security(SSO, SAML, OAuth2.0), Kafka, Service Mesh Integration, Encryption Technologies, Distributed Tracing.</li>
-                <li><b>Databases</b>: Relational Databases(MySQL, Oracle, SQL Server), NoSQL Databases (MongoDB)</li>
-            </ul>
-            <h3>Functional</h3>
-            <ul>
-                <li><b>System Integration</b>: Expertise in integrating various banking systems, such as core banking systems, payment gateways, and third-party APIs, to ensure seamless data flow and interoperability.</li>
-                <li><b>System Architecture</b>: Ability to design and architect end-to-end solutions for banking applications, including defining system components, interfaces, and integration patterns to meet business requirements and optimize performance.</li>
-                <li><b>Security and Fraud Prevention</b>: Proficiency in designing secure software architectures, implementing authentication and authorization mechanisms, and incorporating fraud prevention measures to protect sensitive financial data and mitigate security threats.</li>
-                <li><b>Core Banking Systems</b>: Familiarity with core banking systems,</li>
-                <li><b>Financial Products and Services</b>: Understanding of various financial products and services offered by banks, such as retail banking, commercial banking, wealth management, and investment banking, to architect tailored solutions for specific business domains.</li>
-                <li><b>Scalability and Performance Optimization</b>: Experience in designing scalable and high-performance architectures that can handle large volumes of transactions and users, while optimizing resource utilization and minimizing latency.</li>
-                <li><b>Business Process Automation</b>: Ability to identify opportunities for process automation within the banking domain and architect solutions using workflow engines, business rules etc.</li>
-                <li><b>Cloud Computing</b>: Familiarity with cloud platforms, such as AWS, and the ability to architect cloud-native solutions, leverage microservices architecture, and utilize serverless computing for banking applications.</li>
-                <li><b>Proficient in API migration</b>, encompassing the seamless transition of APIs between on-premises and cloud environments while ensuring compatibility and functionality.</li>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="resume-section">
-        <h2>Education</h2>
-        <ul>
-            <li>C-DAC (2007-08) - MET Mumbai</li>
-            <li>Bachelor of Engineering, Computer Science & Engineering (2002-2006) - M.I.T.S Gwalior, India</li>
-        </ul>
-    </section>
-
-    <section class="resume-section">
-        <h2>Professional Experience</h2>
-        <h3>Solution Architect, Wipro Digital</h3>
-	<p>August 2019 – January 2022 (Pune, India)</p>
-        <p>Febuary 2022 – Present (London Area, United Kingdom)</p>
-        <p><b>Domain</b> - Personal, Retail Banking, Payments, Payment Gateway, Unsecured Lending Products</p>
-        <div class="resume-content">
-            <ul>
-                <li>Part of the design and architecture team for one of Global Bank's Global markets ensuring alignment with business goals, scalability, and security requirements.</li>
-                <li>Collaborate with business stakeholders, project managers, and development teams to gather requirements, define software architecture, and provide technical guidance throughout the project lifecycle.</li>
-                <li>Conduct architectural reviews and provide recommendations for improving system performance, reliability, and maintainability.</li>
-                <li>Define and enforce coding standards, best practices, and architectural principles within the development team.</li>
-                <li>Conduct proofs-of-concept and evaluate emerging technologies to drive innovation and improve software solutions in the banking domain.</li>
-                <li>Work closely with cross-functional teams, including security, compliance, and quality assurance, to ensure adherence to banking regulations and standards.</li>
-                <li>Engaged in API migration initiatives for a prominent banking institution, involving the seamless transition of numerous APIs from on-premises to cloud infrastructure on AWS.</li>
-                <li>Accountable for effecting code modifications in APIs to ensure their compatibility with the migration process, as well as the establishment of infrastructure in the cloud environment.</li>
-                <li>Provide technical leadership and mentorship to junior architects and developers, fostering a culture of continuous learning and professional growth.</li>
-            </ul>
-        </div>
-
-        <h3>Technical Lead(AVP), Barclay Card</h3>
-        <p>July-2018 – August-2019 (Pune, India)</p>
-        <p><b>Domain</b> - Credit Card</p>
-        <div class="resume-content">
-            <ul>
-                <li>Team Leadership: Provide guidance, mentorship, and technical leadership to the development team, fostering a positive and productive work environment. Set clear expectations, assign tasks, and monitor progress to ensure successful project delivery.</li>
-                <li>Technical Expertise: Possess deep knowledge and expertise in software development technologies, methodologies, and best practices including continuous integration and continuous delivery. Stay updated with industry trends and emerging technologies to make informed decisions and drive innovation within the team.</li>
-                <li>Project Planning and Management: Collaborate with project managers, product owners, and stakeholders to define project requirements, estimate effort, and create project plans. Identify risks, dependencies, and constraints and develop strategies to mitigate them. Monitor project progress, track deliverables, and ensure timely completion.</li>
-                <li>Code Review and Quality Assurance: Conduct thorough code reviews to ensure code quality, adherence to coding standards, and best practices. Promote the use of unit testing, code coverage, and other quality assurance measures. Identify and resolve technical issues and bottlenecks during the development process.</li>
-                <li>Collaboration and Communication: Foster effective communication and collaboration within the development team and across other teams, such as product management, quality assurance, and operations. Coordinate with stakeholders to gather requirements, provide updates, and address technical concerns.</li>
-                <li>Technical Documentation: Create and maintain technical documentation, such as architectural diagrams, design documents, and user guides. Ensure documentation is up to date, accessible, and understandable by both technical and non-technical stakeholders.</li>
-            </ul>
-        </div>
-
-        <h3>Project Lead, BNY Mellon</h3>
-        <p>April 2016 – June 2018 (Pune, India)</p>
-        <p><b>Domain</b> - Investment Banking</p>
-        <div class="resume-content">
-            <ul>
-                <li>Team Leadership: Provide guidance, mentorship, and technical leadership to the development team, fostering a positive and productive work environment. Set clear expectations, assign tasks, and monitor progress to ensure successful project delivery.</li>
-                <li>Project Planning and Management: Collaborate with project managers, product owners, and stakeholders to define project requirements, estimate effort, and create project plans. Identify risks, dependencies, and constraints and develop strategies to mitigate them. Monitor project progress, track deliverables, and ensure timely completion.</li>
-                <li>Architecture and Design: Lead the architectural design and technical decision-making process. Define and communicate software design principles, patterns, and guidelines. Ensure the scalability, maintainability, and extensibility of software solutions by driving architectural reviews and adherence to design standards.</li>
-                <li>Collaboration and Communication: Foster effective communication and collaboration within the development team and across other teams, such as product management, quality assurance, and operations. Coordinate with stakeholders to gather requirements, provide updates, and address technical concerns.</li>
-                <li>Continuous Improvement: Promote a culture of continuous improvement within the team. Encourage the adoption of new technologies, tools, and development practices. Identify opportunities for process optimization, automation, and efficiency gains.</li>
-                <li>Troubleshooting and Support: Provide technical support and guidance to the team during critical issue resolution. Collaborate with support teams to investigate and resolve customer-reported issues, ensuring timely resolution and customer satisfaction.</li>
-                <li>Team Development: Identify and address skill gaps within the team. Conduct regular knowledge-sharing sessions, training programs, and workshops to enhance the technical skills and professional growth of team members.</li>
-            </ul>
-        </div>
-
-        <h3>Senior Software Associate, Synechron Pvt Ltd</h3>
-        <p>November 2012 – April 2016 (Pune, India)</p>
-        <p><b>Domain</b> - Government and Institutional Banking</p>
-        <div class="resume-content">
-            <ul>
-                <li>Software Development: Take a lead role in designing, coding, testing, and debugging complex software applications or components. Apply best practices, coding standards, and industry-standard methodologies to deliver high-quality software solutions.</li>
-                <li>Technical Expertise: Demonstrate a deep understanding of programming languages, frameworks, and technologies relevant to the project. Stay updated with emerging trends and advancements in software development and apply that knowledge to improve the development process.</li>
-                <li>System Design and Architecture: Participate in system design discussions. Code Review and Quality Assurance: Conduct thorough code reviews to ensure adherence to coding standards, maintainability, and quality. Collaborate with the team to establish and implement effective testing strategies, including unit testing, integration testing, and automated testing, to deliver reliable software.</li>
-                <li>Technical Problem Solving: Analyze complex technical problems, identify root causes, and propose effective solutions. Apply debugging and troubleshooting skills to diagnose and resolve software defects or performance issues.</li>
-            </ul>
-        </div>
-
-        <h3>Software Engineer, HP Globalsoft</h3>
-        <p>October 2011 – November 2012(Bangalore, India)</p>
-        <p><b>Domain</b> - Health Care</p>
-        <div class="resume-content">
-            <ul>
-                <li>Software Development: Participate in the design, coding, testing, and debugging of software applications or components. Collaborate with team members to develop high-quality, reliable, and scalable software solutions.</li>
-                <li>Programming and Technical Skills: Utilize programming languages, frameworks, and technologies relevant to the project to implement software functionality. Apply software engineering principles and best practices to write clean, maintainable, and efficient code.</li>
-                <li>Testing and Quality Assurance: Conduct unit testing and participate in integration testing to ensure the quality and reliability of software. Collaborate with quality assurance engineers to identify and fix software defects, ensuring the overall quality of the product.</li>
-                <li>Problem Solving: Analyze and troubleshoot software defects or performance issues, using debugging tools and techniques to identify root causes and propose effective solutions.</li>
-            </ul>
-        </div>
-
-        <h3>Senior Software Engineer, HSBC</h3>
-        <p>March 2008 – September 2011 (Pune, India)</p>
-        <p><b>Domain</b> - Retail, Personal Banking and Private Banking</p>
-        <div class="resume-content">
-            <ul>
-                <li>Software Development: Participate in the design, coding, testing, and debugging of software applications or components. Collaborate with team members to develop high-quality, reliable, and scalable software solutions.</li>
-                <li>Testing and Quality Assurance: Conduct unit testing and participate in integration testing to ensure the quality and reliability of software. Collaborate with quality assurance engineers to identify and fix software defects, ensuring the overall quality of the product.</li>
-                <li>Version Control and Collaboration Tools: Utilize version control systems, such as Git, to manage source code effectively. Collaborate with team members using collaboration tools like project management systems, communication platforms, and issue tracking systems.</li>
-                <li>Software Maintenance and Support: Assist in maintaining and supporting software applications after deployment, including bug fixes, performance enhancements, and user support.</li>
-            </ul>
-        </div>
-    </section>
-
-</body>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
 </html>
